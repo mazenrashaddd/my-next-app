@@ -2,7 +2,6 @@
 
 import ProductPageSkeleton from "@/app/components/skeletons/ProductPageSkeleton";
 import { useGetSingleProduct } from "@/app/lib/api/queries";
-import { Metadata } from "next";
 import Image from "next/image";
 import { use } from "react";
 
