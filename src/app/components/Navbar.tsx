@@ -1,10 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import NavLink from "./NavLink";
-
-interface IProps {}
 
 const Navbar = () => {
   return (
@@ -14,7 +10,7 @@ const Navbar = () => {
           <NavLink href="/" text="Home" />
         </li>
         <li className="inline">
-          <NavLink href="products" text="Products" />
+          <NavLink href="/products" text="Products" />
         </li>
       </ul>
     </nav>

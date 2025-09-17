@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Providers from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,9 @@ export default function RootLayout({
         className={`${ibmPlexSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="m-8">{children}</main>
+        <main className="m-8">
+          <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
   );

@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 };
 
 const ProductsLayout = ({ children }: IProps) => {
-  return <>{children}</>;
+  return (
+    <>
+      <div>{children}</div>
+    </>
+  );
 };
 
 export default ProductsLayout;
